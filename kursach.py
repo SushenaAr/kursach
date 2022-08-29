@@ -8,7 +8,7 @@ class photos_vk:
     url= 'https://api.vk.com/method/'
     def __init__(self):
         self.params= {
-            'access_token': 'd99dde60d99dde60d99dde6022da8da86fdd99dd99dde60ba9a43cff2ab7fc1ec8ac927', #токен здесь
+            'access_token': '', #токен здесь
             'v': '5.131'
         }
 
@@ -83,7 +83,7 @@ class Yadisk:
     def __init__(self):
         self.headers= {
             "Content-type": "application/json",
-            'Authorization': 'OAuth y0_AgAAAAAf2yxeAADLWwAAAADM9GjtVAOq_w5dQquZBqgOH-9l1xuv9nM' 
+            'Authorization': 'OAuth ' # токен здесь
             }
 
     def create_folder(self, folder_name,vk_id ,range_= 5):
@@ -103,4 +103,4 @@ class Yadisk:
 
 photo= photos_vk()
 put_photos= Yadisk()
-pprint(put_photos.create_folder('new_reposit',vk_id= 411548195))
+pprint(put_photos.create_folder('new_reposit',vk_id= ))
